@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-md-12 col-centered"><div class="item"><div class="content">
+      <form class="honorForm" novalidate>
+        <label for="FirstName">First Name<input type="text" id="FirstName" name="FirstName" ng-model="formData.FirstName" required></label>
+        <label for="LastName">Last Name<input type="text" id="LastName" name="LastName" ng-model="formData.LastName" required></label>
+        <label for="Email">Email <input type="email" id="email" name="email" ng-model="formData.Email" required></label>
+        <label for="StreetAddress">Street Address<input type="text" id="StreetAddress" name="StreetAddress" ng-model="formData.StreetAddress" required></label>
+        <label for="StreetAddressLine2">Street Address Line 2 <input type="text" id="StreetAddressLine2" name="StreetAddressLine2" ng-model="forData.StreetAddressLine2"></label>
+        <label for="City">City <input type="text" id="City" name="City" ng-model="formData.City" required></label>
+        <label for="State">State <input type="text" id="State" name="State" ng-model="formData.State" required></label>
+        <label for="Zip">Zip Code <input type="text" id="Zip" name="Zip" ng-model="formData.Zip" required></label>
+        <label for="HonorsName">Honor's Name <input type="text" id="HonorsName" name="HonorsName" ng-model="formData.HonorName" required></label>
+        <label for="text">Text Goes Here:<textarea name="name" rows="8" cols="40" ng-model="formData.Text" class="textAreaBorder" required></textarea></label>
+        <label for="imageData">Upload Image<input type="file" accept="image/*" id="fileInput" capture="camera" fileread="formData.ImageData"></label>
+
+        <!-- Deceased name + description and Photo Inputs Below -->
+        <!-- <input type="text" ng-model="hello"> -->
+
+        <button ng-disabled="form.$invalid" ng-click="userInfo();">Submit</button>
+      </form>
+    </div></div></div>
+  </div>
+</div>
